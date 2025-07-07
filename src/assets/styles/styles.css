@@ -1,2 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
-@plugin "daisyui";
+
+@theme inline {
+  --color-primary: oklch(0.3322 0.0674 156.22);
+  --color-primary-light: oklch(0.5706 0.1357 156.22);
+
+  --color-secondary: oklch(0.9694 0.0059 59.65);
+}
+
+.font-header-name {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.font-header-description {
+  font-family: 'Caveat', cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.font-background {
+  font-family: 'Caveat', cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
